@@ -36,6 +36,7 @@ create table companies (
 create table projects (
     project_id serial PRIMARY KEY,
     project_name character varying(30) not null,
+    production_date date,
     project_company_id_fk integer references companies(company_id),
     project_customer_id_fk integer references customers(customer_id)
 );
@@ -55,6 +56,3 @@ create table developers_skills(
     developer_id_fk integer references developers (developer_id) on delete no action on update no action,
     skill_id_fk integer references skills (skill_id) on delete no action on update no action
 );
-
-
-    alter table projects add production_date date;
