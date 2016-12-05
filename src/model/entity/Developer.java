@@ -7,8 +7,17 @@ class Developer {
 	private String developer_email;
 	private String developer_phone;
 	private int project_id;
+	private String project_name;
 	private int company_id;
+	private String company_name;
 	
+	@Override
+	public String toString() {
+		return "Developer [" + developer_id + ", " + developer_first_name + ", " + developer_last_name + ", " + developer_email + ", " + developer_phone + ", " + project_name + ", " + company_name + "]";
+	}
+
+	Developer(){}
+
 	Developer(int developer_id, String developer_first_name, String developer_last_name, String developer_email, String developer_phone, int project_id, int company_id) {
 		this.developer_id = developer_id;
 		this.developer_first_name = developer_first_name;
@@ -73,5 +82,21 @@ class Developer {
 
 	void setCompany_id(int company_id) {
 		this.company_id = company_id;
+	}
+
+	String getProject_name() {
+		return project_name;
+	}
+
+	String getCompany_name() {
+		return company_name;
+	}
+
+	void setProject_Name(String project) {
+		this.project_name = project;
+	}
+
+	void setCompany_name(String company) {
+		this.company_name = company;
 	}
 }
