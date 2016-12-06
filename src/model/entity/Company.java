@@ -1,31 +1,28 @@
 package model.entity;
 
-/**
- * Created by Sergiy on 12/4/16.
- */
 public class Company {
 
-    private long id;
-    private String name;
+    private int companyId;
+    private String companyName;
 
-    public Company(long id, String name) {
-        this.id = id;
-        this.name = name;
+    public Company(int companyId, String companyName) {
+        this.companyId = companyId;
+        this.companyName = companyName;
     }
 
-    public long getId() {
-        return id;
+    public int getCompanyId() {
+        return companyId;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setCompanyId(int companyId) {
+        this.companyId = companyId;
     }
 
-    public String getName() {
-        return name;
+    public String getCompanyName() {
+        return companyName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
     }
 }
