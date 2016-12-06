@@ -4,7 +4,7 @@ package java_ee_module_2;
  * findByFullName(String firstName, String lastName). Create DevelopersDAOImpl class which implements DeveloperDAO interface and implement all methods using JDBC.
  */
 
-public interface DeveloperDAO<T> extends DAO<T> {
-	T findByName(String name);
-	T findByFullName(String firstName, String lastName);
+public interface DeveloperDAO extends DAO<Developer> {
+	Developer findByName(String name);
+	Developer findByFullName(String firstName, String lastName);
 }
