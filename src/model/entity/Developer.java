@@ -1,102 +1,84 @@
 package java_ee_module_2;
 
 class Developer {
-	private int developer_id;
-	private String developer_first_name;
-	private String developer_last_name;
-	private String developer_email;
-	private String developer_phone;
-	private int project_id;
-	private String project_name;
-	private int company_id;
-	private String company_name;
+	private int developerId;
+	private String developerFirstName;
+	private String developerLastName;
+	private String developerEmail;
+	private String developerPhone;
+	private Project project;
+	private Company company;
 	
 	@Override
 	public String toString() {
-		return "Developer [" + developer_id + ", " + developer_first_name + ", " + developer_last_name + ", " + developer_email + ", " + developer_phone + ", " + project_name + ", " + company_name + "]";
+		return "Developer [" + developerId + ", " + developerFirstName + ", " + developerLastName + ", " + developerEmail + ", " + developerPhone + ", " + project + ", " + company + "]";
 	}
 
 	Developer(){}
 
-	Developer(int developer_id, String developer_first_name, String developer_last_name, String developer_email, String developer_phone, int project_id, int company_id) {
-		this.developer_id = developer_id;
-		this.developer_first_name = developer_first_name;
-		this.developer_last_name = developer_last_name;
-		this.developer_email = developer_email;
-		this.developer_phone = developer_phone;
-		this.project_id = project_id;
-		this.company_id = company_id;
+	Developer(int developerId, String developerFirstName, String developerLastName, String developerEmail, String developerPhone, Project project, Company company) {
+		this.developerId = developerId;
+		this.developerFirstName = developerFirstName;
+		this.developerLastName = developerLastName;
+		this.developerEmail = developerEmail;
+		this.developerPhone = developerPhone;
+		this.project = project;
+		this.company = company;
 	}
 
-	int getDeveloper_id() {
-		return developer_id;
+	int getDeveloperId() {
+		return developerId;
 	}
 
-	String getDeveloper_first_name() {
-		return developer_first_name;
+	String getDeveloperFirstName() {
+		return developerFirstName;
 	}
 
-	String getDeveloper_last_name() {
-		return developer_last_name;
+	String getDeveloperLastName() {
+		return developerLastName;
 	}
 
-	String getDeveloper_email() {
-		return developer_email;
+	String getDeveloperEmail() {
+		return developerEmail;
 	}
 
-	String getDeveloper_phone() {
-		return developer_phone;
+	String getDeveloperPhone() {
+		return developerPhone;
 	}
 
-	int getProject_id() {
-		return project_id;
+	Project getProject() {
+		return project;
 	}
 
-	int getCompany_id() {
-		return company_id;
+	Company getCompany() {
+		return company;
 	}
 
-	void setDeveloper_id(int developer_id) {
-		this.developer_id = developer_id;
+	void setDeveloperId(int developerId) {
+		this.developerId = developerId;
 	}
 
-	void setDeveloper_first_name(String developer_first_name) {
-		this.developer_first_name = developer_first_name;
+	void setDeveloperFirstName(String developerFirstName) {
+		this.developerFirstName = developerFirstName;
 	}
 
-	void setDeveloper_last_name(String developer_last_name) {
-		this.developer_last_name = developer_last_name;
+	void setDeveloperLastName(String developerLastName) {
+		this.developerLastName = developerLastName;
 	}
 
-	void setDeveloper_email(String developer_email) {
-		this.developer_email = developer_email;
+	void setDeveloperEmail(String developerEmail) {
+		this.developerEmail = developerEmail;
 	}
 
-	void setDeveloper_phone(String developer_phone) {
-		this.developer_phone = developer_phone;
+	void setDeveloperPhone(String developerPhone) {
+		this.developerPhone = developerPhone;
 	}
 
-	void setProject_id(int project_id) {
-		this.project_id = project_id;
+	void setProject(Project project) {
+		this.project = project;
 	}
 
-	void setCompany_id(int company_id) {
-		this.company_id = company_id;
-	}
-
-	String getProject_name() {
-		return project_name;
-	}
-
-	String getCompany_name() {
-		return company_name;
-	}
-
-	void setProject_Name(String project) {
-		this.project_name = project;
-	}
-
-	void setCompany_name(String company) {
-		this.company_name = company;
+	void setCompany(Company company) {
+		this.company = company;
 	}
 }
