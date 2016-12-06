@@ -7,54 +7,54 @@ public class Project {
     private int projectId;
     private String projectName;
     private Date projectDate;
-    private Company companyId;
-    private Customer customerId;
+    private Company company;
+    private Customer customer;
 
-    public Project(int projectId, String projectName, Date projectDate, Company companyId, Customer customerId) {
+    public Project(int projectId, String projectName, Date projectDate, Company company, Customer customer) {
         this.projectId = projectId;
         this.projectName = projectName;
         this.projectDate = projectDate;
-        this.companyId = companyId;
-        this.customerId = customerId;
+        this.company = company;
+        this.customer = customer;
     }
 
     public int getProjectId() {
         return projectId;
     }
 
-    public String getProjectName() {
-        return projectName;
-    }
-
-    public Date getProjectDate() {
-        return projectDate;
-    }
-
-    public Company getCompanyId() {
-        return companyId;
-    }
-
-    public Customer getCustomerId() {
-        return customerId;
-    }
-
     public void setProjectId(int projectId) {
         this.projectId = projectId;
+    }
+
+    public String getProjectName() {
+        return projectName;
     }
 
     public void setProjectName(String projectName) {
         this.projectName = projectName;
     }
 
+    public Date getProjectDate() {
+        return projectDate;
+    }
+
     public void setProjectDate(Date projectDate) {
         this.projectDate = projectDate;
     }
 
-    public void setCompanyId(Company companyId) {
-        this.companyId = companyId;
+    public Company getCompany() {
+        return company;
     }
 
-    public void setCustomerId(Customer customerId) {
-        this.customerId = customerId;
+    public void setCompany(Company company) {
+        this.company = company;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
 }
