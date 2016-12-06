@@ -1,58 +1,60 @@
 package model.entity;
 
+import java.util.Date;
+
 public class Project {
 
-    private int ProjectId;
-    private String ProjectName;
-    private String ProjectDescription;
-    private int CompanyId;
-    private int CustomerId;
+    private int projectId;
+    private String projectName;
+    private Date projectDate;
+    private Company companyId;
+    private Customer customerId;
 
-    public Project(int projectId, String projectName, String projectDescription, int companyId, int customerId) {
-        ProjectId = projectId;
-        ProjectName = projectName;
-        ProjectDescription = projectDescription;
-        CompanyId = companyId;
-        CustomerId = customerId;
+    public Project(int projectId, String projectName, Date projectDate, Company companyId, Customer customerId) {
+        this.projectId = projectId;
+        this.projectName = projectName;
+        this.projectDate = projectDate;
+        this.companyId = companyId;
+        this.customerId = customerId;
     }
 
     public int getProjectId() {
-        return ProjectId;
+        return projectId;
     }
 
     public String getProjectName() {
-        return ProjectName;
+        return projectName;
     }
 
-    public String getProjectDescription() {
-        return ProjectDescription;
+    public Date getProjectDate() {
+        return projectDate;
     }
 
-    public int getCompanyId() {
-        return CompanyId;
+    public Company getCompanyId() {
+        return companyId;
     }
 
-    public int getCustomerId() {
-        return CustomerId;
+    public Customer getCustomerId() {
+        return customerId;
     }
 
     public void setProjectId(int projectId) {
-        ProjectId = projectId;
+        this.projectId = projectId;
     }
 
     public void setProjectName(String projectName) {
-        ProjectName = projectName;
+        this.projectName = projectName;
     }
 
-    public void setProjectDescription(String projectDescription) {
-        ProjectDescription = projectDescription;
+    public void setProjectDate(Date projectDate) {
+        this.projectDate = projectDate;
     }
 
-    public void setCompanyId(int companyId) {
-        CompanyId = companyId;
+    public void setCompanyId(Company companyId) {
+        this.companyId = companyId;
     }
 
-    public void setCustomerId(int customerId) {
-        CustomerId = customerId;
+    public void setCustomerId(Customer customerId) {
+        this.customerId = customerId;
     }
 }
