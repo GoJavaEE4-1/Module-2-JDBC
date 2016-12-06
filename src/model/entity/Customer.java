@@ -2,27 +2,27 @@ package model.entity;
 
 public class Customer {
 
-    private int CustomerId;
-    private String CustomerName;
+    private int customerId;
+    private String customerName;
 
     public Customer(int customerId, String customerName) {
-        CustomerId = customerId;
-        CustomerName = customerName;
+        this.customerId = customerId;
+        this.customerName = customerName;
     }
 
     public int getCustomerId() {
-        return CustomerId;
+        return customerId;
     }
 
     public String getCustomerName() {
-        return CustomerName;
+        return customerName;
     }
 
     public void setCustomerId(int customerId) {
-        CustomerId = customerId;
+        this.customerId = customerId;
     }
 
     public void setCustomerName(String customerName) {
-        CustomerName = customerName;
+        this.customerName = customerName;
     }
 }
