@@ -1,31 +1,58 @@
 package model.entity;
 
-/**
- * Created by Tiger on 05.12.2016.
- */
 public class Project {
 
-    private long id;
-    private String name;
+    private int ProjectId;
+    private String ProjectName;
+    private String ProjectDescription;
+    private int CompanyId;
+    private int CustomerId;
 
-    public Project(long id, String name) {
-        this.id = id;
-        this.name = name;
+    public Project(int projectId, String projectName, String projectDescription, int companyId, int customerId) {
+        ProjectId = projectId;
+        ProjectName = projectName;
+        ProjectDescription = projectDescription;
+        CompanyId = companyId;
+        CustomerId = customerId;
     }
 
-    public long getId() {
-        return id;
+    public int getProjectId() {
+        return ProjectId;
     }
 
-    public String getName() {
-        return name;
+    public String getProjectName() {
+        return ProjectName;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public String getProjectDescription() {
+        return ProjectDescription;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public int getCompanyId() {
+        return CompanyId;
+    }
+
+    public int getCustomerId() {
+        return CustomerId;
+    }
+
+    public void setProjectId(int projectId) {
+        ProjectId = projectId;
+    }
+
+    public void setProjectName(String projectName) {
+        ProjectName = projectName;
+    }
+
+    public void setProjectDescription(String projectDescription) {
+        ProjectDescription = projectDescription;
+    }
+
+    public void setCompanyId(int companyId) {
+        CompanyId = companyId;
+    }
+
+    public void setCustomerId(int customerId) {
+        CustomerId = customerId;
     }
 }
