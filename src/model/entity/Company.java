@@ -1,4 +1,4 @@
-package model.entity;
+package java_ee_module_2;
 
 public class Company {
 
@@ -10,7 +10,12 @@ public class Company {
         this.companyName = companyName;
     }
 
-    public int getCompanyId() {
+    @Override
+	public String toString() {
+		return "Company [companyId=" + companyId + ", companyName=" + companyName + "]";
+	}
+
+	public int getCompanyId() {
         return companyId;
     }
 

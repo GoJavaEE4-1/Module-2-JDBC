@@ -1,4 +1,4 @@
-package model.entity;
+package java_ee_module_2;
 
 import java.util.Date;
 
@@ -17,8 +17,18 @@ public class Project {
         this.company = company;
         this.customer = customer;
     }
+    
+    public Project(int projectId, String projectName) {
+		this.projectId = projectId;
+		this.projectName = projectName;
+	}
+    
+	@Override
+	public String toString() {
+		return "Project [projectId=" + projectId + ", projectName=" + projectName + "]";
+	}
 
-    public int getProjectId() {
+	public int getProjectId() {
         return projectId;
     }
 
