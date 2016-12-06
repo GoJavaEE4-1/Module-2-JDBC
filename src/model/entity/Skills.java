@@ -1,27 +1,27 @@
 package java_ee_module_2;
 
 class Skills {
-	private int skill_id;
-	private String skill_name;
+	private int skillId;
+	private String skillName;
 	
-	Skills(int skill_id, String skill_name) {
-		this.skill_id = skill_id;
-		this.skill_name = skill_name;
+	Skills(int skillId, String skillName) {
+		this.skillId = skillId;
+		this.skillName = skillName;
 	}
 
-	int getSkill_id() {
-		return skill_id;
+	int getSkillId() {
+		return skillId;
 	}
 
-	String getSkill_name() {
-		return skill_name;
+	String getSkillName() {
+		return skillName;
 	}
 
-	void setSkill_id(int skill_id) {
-		this.skill_id = skill_id;
+	void setSkillId(int skillId) {
+		this.skillId = skillId;
 	}
 
-	void setSkill_name(String skill_name) {
-		this.skill_name = skill_name;
+	void setSkillName(String skillName) {
+		this.skillName = skillName;
 	}
 }
