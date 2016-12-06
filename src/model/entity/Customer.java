@@ -1,31 +1,28 @@
 package model.entity;
 
-/**
- * Created by Tiger on 05.12.2016.
- */
 public class Customer {
 
-    private long id;
-    private String name;
+    private int CustomerId;
+    private String CustomerName;
 
-    public Customer(long id, String name) {
-        this.id = id;
-        this.name = name;
+    public Customer(int customerId, String customerName) {
+        CustomerId = customerId;
+        CustomerName = customerName;
     }
 
-    public long getId() {
-        return id;
+    public int getCustomerId() {
+        return CustomerId;
     }
 
-    public String getName() {
-        return name;
+    public String getCustomerName() {
+        return CustomerName;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setCustomerId(int customerId) {
+        CustomerId = customerId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCustomerName(String customerName) {
+        CustomerName = customerName;
     }
 }
