@@ -1,6 +1,6 @@
 package java_ee_module_2;
 
-class Skills {
+class Skills{
 	private int skillId;
 	private String skillName;
 	
