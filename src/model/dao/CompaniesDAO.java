@@ -15,7 +15,7 @@ import java.util.Collection;
 //which implements CompaniesDAO interface and implements all methods using JDBC.
 
 
-public interface CompaniesDAO<T> implements DAO<T> {
+public interface CompaniesDAO<T> extends DAO<T> {
 
     Company get (long id)
             throws SQLException;
