@@ -1,4 +1,3 @@
-package java_ee_module_2;
 import java.util.ArrayList;
 
 /*

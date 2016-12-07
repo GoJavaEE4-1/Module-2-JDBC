@@ -1,4 +1,3 @@
-package java_ee_module_2;
 
 class MainTestSkill {
 	private SkillDAOImpl skillDAOImpl = new SkillDAOImpl();

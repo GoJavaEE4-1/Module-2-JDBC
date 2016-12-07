@@ -1,4 +1,3 @@
-package java_ee_module_2;
 
 class MainTestDev {
 	private DeveloperDAOImpl developersDAOImpl = new DeveloperDAOImpl();
