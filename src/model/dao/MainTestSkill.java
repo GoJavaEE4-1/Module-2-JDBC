@@ -1,3 +1,4 @@
+package model.dao;
 
 class MainTestSkill {
 	private SkillDAOImpl skillDAOImpl = new SkillDAOImpl();

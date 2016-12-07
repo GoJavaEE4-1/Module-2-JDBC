@@ -1,3 +1,4 @@
+package model.dao;
 
 class MainTestDev {
 	private DeveloperDAOImpl developersDAOImpl = new DeveloperDAOImpl();
