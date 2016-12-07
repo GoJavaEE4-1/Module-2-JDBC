@@ -1,4 +1,4 @@
-package java_ee_module_2;
+package model.entity;
 
 class Skill {
 	private int skillId;
