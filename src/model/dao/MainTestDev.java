@@ -1,4 +1,4 @@
-package java_ee_module_2;
+package model.dao;
 
 class MainTestDev {
 	private DeveloperDAOImpl developersDAOImpl = new DeveloperDAOImpl();

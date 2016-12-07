@@ -1,12 +1,19 @@
-package java_ee_module_2;
+package model.entity;
 
-class Skills{
+class Skill {
 	private int skillId;
 	private String skillName;
 	
-	Skills(int skillId, String skillName) {
+	Skill(int skillId, String skillName) {
 		this.skillId = skillId;
 		this.skillName = skillName;
+	}
+	
+	Skill(){}
+
+	@Override
+	public String toString() {
+		return "Skill [skillId=" + skillId + ", skillName=" + skillName + "]";
 	}
 
 	int getSkillId() {
