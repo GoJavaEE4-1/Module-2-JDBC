@@ -1,4 +1,4 @@
-package java_ee_module_2;
+package model.dao;
 import java.sql.SQLException;
 
 class DeveloperDAOImpl implements DeveloperDAO {
