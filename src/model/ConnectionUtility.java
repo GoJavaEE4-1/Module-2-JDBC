@@ -21,7 +21,7 @@ class ConnectionUtility {
 	}
 	
 	private void getConnectionParameters() {
-		try (FileInputStream fileInputStream = new FileInputStream("src/java_ee_module_2/config.properties")) {
+		try (FileInputStream fileInputStream = new FileInputStream("config.properties")) {
 			Properties properties = new Properties();
 			properties.load(fileInputStream);
 			JDBC_DRIVER = properties.getProperty("JDBC_DRIVER");
