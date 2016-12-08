@@ -21,11 +21,11 @@ class ConnectionUtility {
 	}
 	
 	private void getConnectionParameters() {
-		try (FileInputStream fileInputStream = new FileInputStream("config.properties")) {
+		try (FileInputStream fileInputStream = new FileInputStream("src/java_ee_module_2/config.properties")) {
 			Properties properties = new Properties();
 			properties.load(fileInputStream);
 			JDBC_DRIVER = properties.getProperty("JDBC_DRIVER");
-			DATABASE_URL = properties.getProperty("DATABASE_URL");
+			DATABASE_URL = properties.getProperty("DATABASE_URL") + properties.getProperty("DB") + properties.getProperty("SCHEMA");
 			USER = properties.getProperty("USER");
 			PASSWORD = properties.getProperty("PASSWORD");
 		} catch (Exception e) {e.printStackTrace();}
