@@ -10,7 +10,7 @@ public class CustomersDAOImpl implements CustomersDAO<Customer> {
     private static final String PASS = "111";
     private static  final String insertSql = "Insert into Customers values (?,?)";
     private static  final String selectById = "Select * from Customers where customer_id = ?";
-    private  static final String updatetSql = "Update Customers set customer_name = ? where customer_id = ?";
+    private  static final String updateSql = "Update Customers set customer_name = ? where customer_id = ?";
     private static final String deleteSql = "Delete from Customers where customer_id  = ?  ";
     private static final String findByNameSql = "Select * from Customers where customer_name = ? ";
     public static PreparedStatement statement = null;
@@ -72,7 +72,7 @@ public class CustomersDAOImpl implements CustomersDAO<Customer> {
         try {
             loadDriver();
             Connection connection = connectToDB();
-            statement = connection.prepareStatement(updatetSql);
+            statement = connection.prepareStatement(updateSql);
             statement.setString(1,customer.getCustomerName());
             statement.setInt(2,customer.getCustomerId());
             statement.executeUpdate();
