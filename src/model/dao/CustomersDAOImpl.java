@@ -5,7 +5,7 @@ import model.entity.Customer;
 import java.sql.*;
 
 public class CustomersDAOImpl implements CustomersDAO<Customer> {
-    private static final String DB = "jdbc:postgresql://localhost:5433/postgres";
+    private static final String DB = "jdbc:postgresql://localhost:5432/postgres";
     private static final String USER = "postgres";
     private static final String PASS = "111";
     private static  final String insertSql = "Insert into Customers values (?,?)";
