@@ -8,10 +8,10 @@ public class CustomersDAOImpl implements CustomersDAO<Customer> {
     private static final String DB = "jdbc:postgresql://localhost:5433/postgres";
     private static final String USER = "postgres";
     private static final String PASS = "111";
-    private static  final String insertSql = "INSERT into Customers VALUES (?,?)";
+    private static  final String insertSql = "Insert into Customers values (?,?)";
     private static  final String selectById = "Select * from Customers where customer_id = ?";
-    private  static final String updatetSql = "UPDATE Customers set customer_name = ? where customer_id = ?";
-    private static final String deleteSql = "DELETE from CUSTOMERS where customer_id  = ?  ";
+    private  static final String updatetSql = "Update Customers set customer_name = ? where customer_id = ?";
+    private static final String deleteSql = "Delete from Customers where customer_id  = ?  ";
     private static final String findByNameSql = "Select * from Customers where customer_name = ? ";
     public static PreparedStatement statement = null;
 
