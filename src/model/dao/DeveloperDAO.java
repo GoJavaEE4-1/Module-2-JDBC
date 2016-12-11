@@ -4,7 +4,7 @@ package model.dao;
  * findByFullName(String firstName, String lastName). Create DevelopersDAOImpl class which implements DeveloperDAO interface and implement all methods using JDBC.
  */
 
-public interface DeveloperDAO extends DAO<Developer> {
+public interface DeveloperDAO<Developer> extends DAO<Developer> {
 	Developer findByName(String name);
 	Developer findByFullName(String firstName, String lastName);
 }

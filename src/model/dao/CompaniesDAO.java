@@ -1,9 +1,7 @@
 package model.dao;
 
-import model.entity.Company;
 
-import java.sql.SQLException;
-import java.util.Collection;
+import java.util.List;
 
 /**
  * Created by Sergiy on 12/4/16.
@@ -15,12 +13,9 @@ import java.util.Collection;
 //which implements CompaniesDAO interface and implements all methods using JDBC.
 
 
-public interface CompaniesDAO<T> extends DAO<T> {
+public interface CompaniesDAO<Company> extends DAO<Company> {
 
-    Company get (long id)
-            throws SQLException;
-
-    Collection<Company> findByName(String name)
-            throws SQLException;
+    public Company findByName(String name);
+    public List<Company> getAll();
 
 }

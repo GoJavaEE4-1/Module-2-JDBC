@@ -1,7 +1,11 @@
 package model.dao;
 import java.sql.SQLException;
 
-class DeveloperDAOImpl implements DeveloperDAO {
+import model.entity.Company;
+import model.entity.Developer;
+import model.entity.Project;
+
+public class DeveloperDAOImpl implements DeveloperDAO<Developer> {
 	private ConnectionUtility connectionUtility = new ConnectionUtility();
 
 	@Override

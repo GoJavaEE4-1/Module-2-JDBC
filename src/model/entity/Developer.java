@@ -1,6 +1,6 @@
 package model.entity;
 
-class Developer {
+public class Developer {
 	private int developerId;
 	private String developerFirstName;
 	private String developerLastName;
