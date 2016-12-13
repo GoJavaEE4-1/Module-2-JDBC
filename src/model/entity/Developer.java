@@ -14,9 +14,9 @@ public class Developer {
 		return "Developer [" + developerId + ", " + developerFirstName + ", " + developerLastName + ", " + developerEmail + ", " + developerPhone + ", " + project + ", " + company + "]";
 	}
 
-	Developer(){}
+	public Developer(){}
 
-	Developer(int developerId, String developerFirstName, String developerLastName, String developerEmail, String developerPhone, Project project, Company company) {
+	public Developer(int developerId, String developerFirstName, String developerLastName, String developerEmail, String developerPhone, Project project, Company company) {
 		this.developerId = developerId;
 		this.developerFirstName = developerFirstName;
 		this.developerLastName = developerLastName;
@@ -26,59 +26,59 @@ public class Developer {
 		this.company = company;
 	}
 
-	int getDeveloperId() {
+	public int getDeveloperId() {
 		return developerId;
 	}
 
-	String getDeveloperFirstName() {
+	public String getDeveloperFirstName() {
 		return developerFirstName;
 	}
 
-	String getDeveloperLastName() {
+	public String getDeveloperLastName() {
 		return developerLastName;
 	}
 
-	String getDeveloperEmail() {
+	public String getDeveloperEmail() {
 		return developerEmail;
 	}
 
-	String getDeveloperPhone() {
+	public String getDeveloperPhone() {
 		return developerPhone;
 	}
 
-	Project getProject() {
+	public Project getProject() {
 		return project;
 	}
 
-	Company getCompany() {
+	public Company getCompany() {
 		return company;
 	}
 
-	void setDeveloperId(int developerId) {
+	public void setDeveloperId(int developerId) {
 		this.developerId = developerId;
 	}
 
-	void setDeveloperFirstName(String developerFirstName) {
+	public void setDeveloperFirstName(String developerFirstName) {
 		this.developerFirstName = developerFirstName;
 	}
 
-	void setDeveloperLastName(String developerLastName) {
+	public void setDeveloperLastName(String developerLastName) {
 		this.developerLastName = developerLastName;
 	}
 
-	void setDeveloperEmail(String developerEmail) {
+	public void setDeveloperEmail(String developerEmail) {
 		this.developerEmail = developerEmail;
 	}
 
-	void setDeveloperPhone(String developerPhone) {
+	public void setDeveloperPhone(String developerPhone) {
 		this.developerPhone = developerPhone;
 	}
 
-	void setProject(Project project) {
+	public void setProject(Project project) {
 		this.project = project;
 	}
 
-	void setCompany(Company company) {
+	public void setCompany(Company company) {
 		this.company = company;
 	}
 }

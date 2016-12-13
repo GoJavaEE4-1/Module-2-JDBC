@@ -1,6 +1,5 @@
 package model.dao;
 import java.sql.SQLException;
-
 import model.entity.Company;
 import model.entity.Developer;
 import model.entity.Project;
