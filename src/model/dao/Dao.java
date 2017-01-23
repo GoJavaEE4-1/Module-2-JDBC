@@ -9,7 +9,7 @@ package model.dao;
 //        delete(int id) under the dao directory
 
 
-public interface DAO<T> {
+public interface Dao<T> {
 
     void create (T t);
     T get (int id);

@@ -1,6 +1,6 @@
 package model.entity;
 
-public class Customer {
+public class Customer implements Model {
 
     private int customerId;
     private String customerName;
@@ -9,6 +9,8 @@ public class Customer {
         this.customerId = customerId;
         this.customerName = customerName;
     }
+
+    public Customer() {}
 
     public int getCustomerId() {
         return customerId;
@@ -24,5 +26,12 @@ public class Customer {
 
     public void setCustomerName(String customerName) {
         this.customerName = customerName;
+    }
+
+    @Override
+    public String toString() {
+        return "----------------------------------------------------------------------" + "\n" +
+                "Customers name: " + customerName + "; " + "\n" +
+                "Customers ID: " + customerId + "\n";
     }
 }

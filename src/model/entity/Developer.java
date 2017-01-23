@@ -1,84 +1,63 @@
 package model.entity;
 
-public class Developer {
+public class Developer implements Model{
+
 	private int developerId;
-	private String developerFirstName;
-	private String developerLastName;
-	private String developerEmail;
-	private String developerPhone;
-	private Project project;
-	private Company company;
-	
-	@Override
+	private String developerName;
+	private Project developerProjectId;
+	private Company developerCompanyId;
+
+    public Developer(int developerId,
+                     String developerName,
+                     Project developerProjectId,
+                     Company developerCompanyId) {
+        this.developerId = developerId;
+        this.developerName = developerName;
+        this.developerProjectId = developerProjectId;
+        this.developerCompanyId = developerCompanyId;
+    }
+
+    public Developer() {}
+
+    public int getDeveloperId() {
+        return developerId;
+    }
+
+    public void setDeveloperId(int developerId) {
+        this.developerId = developerId;
+    }
+
+    public String getDeveloperName() {
+        return developerName;
+    }
+
+    public void setDeveloperName(String developerName) {
+        this.developerName = developerName;
+    }
+
+    public Project getDeveloperProjectId() {
+        return developerProjectId;
+    }
+
+    public void setDeveloperProjectId(Project developerProjectId) {
+        this.developerProjectId = developerProjectId;
+    }
+
+    public Company getDeveloperCompanyId() {
+        return developerCompanyId;
+    }
+
+    public void setDeveloperCompanyId(Company developerCompanyId) {
+        this.developerCompanyId = developerCompanyId;
+    }
+
+    @Override
 	public String toString() {
-		return "Developer [" + developerId + ", " + developerFirstName + ", " + developerLastName + ", " + developerEmail + ", " + developerPhone + ", " + project + ", " + company + "]";
-	}
-
-	public Developer(){}
-
-	public Developer(int developerId, String developerFirstName, String developerLastName, String developerEmail, String developerPhone, Project project, Company company) {
-		this.developerId = developerId;
-		this.developerFirstName = developerFirstName;
-		this.developerLastName = developerLastName;
-		this.developerEmail = developerEmail;
-		this.developerPhone = developerPhone;
-		this.project = project;
-		this.company = company;
-	}
-
-	public int getDeveloperId() {
-		return developerId;
-	}
-
-	public String getDeveloperFirstName() {
-		return developerFirstName;
-	}
-
-	public String getDeveloperLastName() {
-		return developerLastName;
-	}
-
-	public String getDeveloperEmail() {
-		return developerEmail;
-	}
-
-	public String getDeveloperPhone() {
-		return developerPhone;
-	}
-
-	public Project getProject() {
-		return project;
-	}
-
-	public Company getCompany() {
-		return company;
-	}
-
-	public void setDeveloperId(int developerId) {
-		this.developerId = developerId;
-	}
-
-	public void setDeveloperFirstName(String developerFirstName) {
-		this.developerFirstName = developerFirstName;
-	}
-
-	public void setDeveloperLastName(String developerLastName) {
-		this.developerLastName = developerLastName;
-	}
-
-	public void setDeveloperEmail(String developerEmail) {
-		this.developerEmail = developerEmail;
-	}
-
-	public void setDeveloperPhone(String developerPhone) {
-		this.developerPhone = developerPhone;
-	}
-
-	public void setProject(Project project) {
-		this.project = project;
-	}
-
-	public void setCompany(Company company) {
-		this.company = company;
+		return "----------------------------------------------------------" + "\n" +
+				"Разработчик: " + developerName
+				 + "\n" +
+				"ID разработчика: " + developerId + "\n" +
+				"ID команды разработчика: " + developerCompanyId + "\n" +
+				"ID проекта, над которым работает разработчик: " + developerProjectId;
 	}
 }

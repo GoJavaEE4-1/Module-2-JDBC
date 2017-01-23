@@ -2,33 +2,25 @@ package model.entity;
 
 import java.util.Date;
 
-public class Project {
+public class Project implements Model {
 
     private int projectId;
     private String projectName;
-    private Date projectDate;
-    private Company company;
-    private Customer customer;
+    private Date productionDate;
+    private Company projectCompanyId;
+    private Customer projectCustomerId;
 
-    public Project(int projectId, String projectName, Date projectDate, Company company, Customer customer) {
+    public Project(int projectId, String projectName, Date productionDate, Company projectCompanyId, Customer projectCustomerId) {
         this.projectId = projectId;
         this.projectName = projectName;
-        this.projectDate = projectDate;
-        this.company = company;
-        this.customer = customer;
+        this.productionDate = productionDate;
+        this.projectCompanyId = projectCompanyId;
+        this.projectCustomerId = projectCustomerId;
     }
-    
-    public Project(int projectId, String projectName) {
-		this.projectId = projectId;
-		this.projectName = projectName;
-	}
-    
-	@Override
-	public String toString() {
-		return "Project [projectId=" + projectId + ", projectName=" + projectName + "]";
-	}
 
-	public int getProjectId() {
+    public Project() {}
+
+    public int getProjectId() {
         return projectId;
     }
 
@@ -44,27 +36,36 @@ public class Project {
         this.projectName = projectName;
     }
 
-    public Date getProjectDate() {
-        return projectDate;
+    public Date getProductionDate() {
+        return productionDate;
     }
 
-    public void setProjectDate(Date projectDate) {
-        this.projectDate = projectDate;
+    public void setProductionDate(Date productionDate) {
+        this.productionDate = productionDate;
     }
 
-    public Company getCompany() {
-        return company;
+    public Company getProjectCompanyId() {
+        return projectCompanyId;
     }
 
-    public void setCompany(Company company) {
-        this.company = company;
+    public void setProjectCompanyId(Company projectCompanyId) {
+        this.projectCompanyId = projectCompanyId;
     }
 
-    public Customer getCustomer() {
-        return customer;
+    public Customer getProjectCustomerId() {
+        return projectCustomerId;
     }
 
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
+    public void setProjectCustomerId(Customer projectCustomerId) {
+        this.projectCustomerId = projectCustomerId;
+    }
+
+    @Override
+    public String toString() {
+        return "----------------------------------------------------------" + "\n" +
+                "Проект: " + projectName + "\n" +
+                "ID проекта: " + projectId + "\n" +
+                "ID компании, выполняющей проект: " + projectCompanyId + "\n" +
+                "ID заказчика: " + projectCustomerId;
     }
 }

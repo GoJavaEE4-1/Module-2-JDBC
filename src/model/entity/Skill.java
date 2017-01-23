@@ -1,34 +1,37 @@
 package model.entity;
 
-class Skill {
+public class Skill implements Model{
 	private int skillId;
 	private String skillName;
-	
-	Skill(int skillId, String skillName) {
+
+	public Skill(int skillId, String skillName) {
 		this.skillId = skillId;
 		this.skillName = skillName;
 	}
-	
-	Skill(){}
 
-	@Override
-	public String toString() {
-		return "Skill [skillId=" + skillId + ", skillName=" + skillName + "]";
-	}
+	public Skill() {}
 
-	int getSkillId() {
+	public int getSkillId() {
 		return skillId;
 	}
 
-	String getSkillName() {
+	public String getSkillName() {
 		return skillName;
 	}
 
-	void setSkillId(int skillId) {
+	public void setSkillId(int skillId) {
 		this.skillId = skillId;
 	}
 
-	void setSkillName(String skillName) {
+	public void setSkillName(String skillName) {
 		this.skillName = skillName;
+	}
+
+	@Override
+	public String toString() {
+
+		return "----------------------------------------------------------------------" + "\n" +
+				"Skill name: " + skillName + "; " + "\n" +
+				"Skill ID: " + skillId + "\n";
 	}
 }

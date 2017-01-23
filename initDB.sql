@@ -43,10 +43,7 @@ create table projects (
 
 create table developers (
     developer_id serial PRIMARY KEY,
-    developer_first_name character varying(15) not null,
-    developer_last_name character varying(15) not null,
-    developer_email character varying(50) not null,
-    developer_phone character varying(15) not null,
+    developer_name character varying(15) not null,
     developer_project_id_fk integer references projects(project_id),
     developer_company_id_fk integer references companies(company_id)
 );

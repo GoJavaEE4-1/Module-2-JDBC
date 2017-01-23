@@ -1,22 +1,16 @@
 package model.entity;
 
-public class Company {
+public class Company implements Model{
 
     private int companyId;
     private String companyName;
-
-    public Company() {
-    }
 
     public Company(int companyId, String companyName) {
         this.companyId = companyId;
         this.companyName = companyName;
     }
 
-    @Override
-	public String toString() {
-		return "Company [companyId=" + companyId + ", companyName=" + companyName + "]";
-	}
+    public Company() {}
 
 	public int getCompanyId() {
         return companyId;
@@ -32,5 +26,13 @@ public class Company {
 
     public void setCompanyName(String companyName) {
         this.companyName = companyName;
+    }
+
+    @Override
+    public String toString() {
+
+        return "----------------------------------------------------------------------" + "\n" +
+                "Company name: " + companyName + "; " + "\n" +
+                "Company ID: " + companyId + "\n";
     }
 }
